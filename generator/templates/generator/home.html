@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+			crossorigin="anonymous">
+
+		<title>Password Generator</title>
+	</head>
+
+	<body style="background: mediumaquamarine;">
+		<div class="container text-center" style="padding-top: 2%;">
+			<h1 style="color: white;">Password Generator</h1>
+			<form action="{% url 'password' %}" style="font-size: 1.5rem; padding-top: 5rem;">
+				Length
+				<select name="length" style="width: 5%; font-size: 1.25rem;">
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13" selected="selected">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</select>
+				<br>
+
+				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="uppercase"> UpperCase
+				<br>
+				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="number"> Numbers
+				<br>
+				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="special"> Special Characters
+				<br><br>
+				<input type="submit" value="Generate Password" class="btn btn-lg btn-primary">
+			</form>
+		</div>
+	</body>
+
+</html>
