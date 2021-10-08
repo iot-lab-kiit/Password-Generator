@@ -40,15 +40,8 @@ git clone https://github.com/iot-lab-kiit/Password-Generator.git
 
 <a name="tasks"></a>
 ## Choose from these Tasks
-1.Adding new UI components of your choice (which is not already present).
 
-2.Creating a simple copy button to directly copy the code snippet to your clipboard. 
-
-3.Any possible UI updates.
-
-4.Refer to [issues](https://github.com/iot-lab-kiit/Password-Generator/issues) for more tasks.
-
-5.Any other useful updates that comes to your mind.
+Refer to [issues](https://github.com/iot-lab-kiit/Password-Generator/issues) for more tasks.
 
 
 <a name="about_developers"></a>
