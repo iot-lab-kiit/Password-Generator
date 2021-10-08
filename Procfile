@@ -1,0 +1,1 @@
+web: gunicorn urlredirect.wsgi --log-file -
