@@ -60,7 +60,9 @@ greater end-user participation. We currently have a number of successful goods a
 
 <a name="preview"></a>
 ## Website Preview
+![image](https://user-images.githubusercontent.com/64470404/118143973-8ac8b400-b429-11eb-9812-eb640ac499e9.png)
 
+![image](https://user-images.githubusercontent.com/64470404/118144000-91efc200-b429-11eb-8519-b9984a63b7bd.png)
 
 <a name="contents"></a>
 ## Table of Contents
@@ -75,7 +77,7 @@ greater end-user participation. We currently have a number of successful goods a
 
 <a name="play"></a>
 ## Deployed Version
-https://nisheet.pythonanywhere.com/
+https://passgeniot.herokuapp.com/
 
 [Back to Start](#title)
 
