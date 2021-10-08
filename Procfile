@@ -1,1 +1,1 @@
-web: gunicorn urlredirect.wsgi --log-file -
+web: gunicorn password_generator.wsgi --log-file -
