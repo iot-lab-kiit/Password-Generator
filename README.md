@@ -28,11 +28,13 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 git clone https://github.com/iot-lab-kiit/Password-Generator.git
 ```
 
-3.Go to < > file and add the name and the corresponding icon.
+3.Decide the best suiting sub-category for your component under basic or advanced
 
-4.Create the fragment with a demo of the component and the related codes as done in other fragments.
+4.Go to < > file and add the name and the corresponding icon.
 
-5.Send us a Pull Request describing about the component you have added.
+5.Create the fragment with a demo of the component and the related codes as done in other fragments.
+
+6.Send us a Pull Request describing about the component you have added.
 
 `Note -` Adding a component that is already listed in the app with minor changes is not allowed.
 
