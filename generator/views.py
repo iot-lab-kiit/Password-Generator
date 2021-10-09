@@ -9,7 +9,9 @@ def password(request):
 	
 	alphabets = list('abcdefghijklmnopqrstuvwxyz')
 	length = int(request.GET.get('length', 13))
-	finalpass = ''
+	number = int(request.GET.get('number', 1))
+    
+	passwords = []
 
 	if request.GET.get('uppercase'):
 		alphabets.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
@@ -19,8 +21,13 @@ def password(request):
 
 	if request.GET.get('number'):
 		alphabets.extend(list('0123456789'))
+    
 
-	for i in range(length):
-		finalpass += random.choice(alphabets)
-	
-	return render(request, 'generator/password.html', {'password': finalpass})
+	for j in range(number):
+         finalpass = ''
+         for i in range(length):
+	         finalpass += random.choice(alphabets)
+         passwords.append(finalpass)
+        
+	print(passwords)	
+	return render(request, 'generator/password.html',{'passwords': passwords})
