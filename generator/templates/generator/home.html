@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
-			crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
-		<title>Password Generator</title>
-	</head>
+	<link rel="stylesheet" href="./css/styles.css">
 
-	<body style="background: mediumaquamarine;">
-		<div class="container text-center" style="padding-top: 2%;">
-			<h1 style="color: white;">Password Generator</h1>
-			<form action="{% url 'password' %}" style="font-size: 1.5rem; padding-top: 5rem;">
-				Length
-				<select name="length" style="width: 5%; font-size: 1.25rem;">
+	<title>Password Generator - Home</title>
+</head>
+
+<body>
+	<div class="container text-center">
+		<header class="p-5">
+			<h1 class="text-light">Password Generator</h1>
+		</header>
+
+		<form action="{% url 'password' %}" class="fs-4 mt-5 mx-auto text-start">
+			<div>
+				<label for="length-select">Length: </label>
+
+				<select name="length" id="length-select">
 					<option value="6">6</option>
 					<option value="7">7</option>
 					<option value="8">8</option>
@@ -35,9 +41,12 @@
 					<option value="19">19</option>
 					<option value="20">20</option>
 				</select>
-				<br>
-				How many passwords to generate
-				<select name="passcount" style="width: 5%; font-size: 1.25rem;">
+			</div>
+
+			<div>
+				<label for="passcount">Passwords to generate: </label>
+
+				<select name="passcount" id="passcount">
 					<option value="1" selected="selected">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -54,17 +63,29 @@
 					<option value="14">14</option>
 					<option value="15">15</option>
 				</select>
-				<br>
+			</div>
 
-				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="uppercase"> UpperCase
-				<br>
-				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="number"> Numbers
-				<br>
-				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="special"> Special Characters
-				<br><br>
-				<input type="submit" value="Generate Password" class="btn btn-lg btn-primary">
-			</form>
-		</div>
-	</body>
+			<div>
+				<input type="checkbox" id="uppercase" name="uppercase">
+				<label for="uppercase">UpperCase</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="number" name="number">
+				<label for="uppercase">Numbers</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="special" name="special">
+				<label for=special>Special Characters</label>
+			</div>
+
+			<div class="input text-center">
+				<input type="submit" value="Generate Password" class="btn btn-lg btn-primary mt-4">
+			</div>
+
+		</form>
+	</div>
+</body>
 
 </html>
