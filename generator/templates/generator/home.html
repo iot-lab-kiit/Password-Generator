@@ -10,15 +10,27 @@
 			integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
 			crossorigin="anonymous">
 
+
+
+		<!-- Linking Css3 -->
+
+		<link rel="stylesheet" href="home.css">
+
 		<title>Password Generator</title>
 	</head>
 
-	<body style="background: mediumaquamarine;">
-		<div class="container text-center" style="padding-top: 2%;">
-			<h1 style="color: white;">Password Generator</h1>
-			<form action="{% url 'password' %}" style="font-size: 1.5rem; padding-top: 5rem;">
-				Length
-				<select name="length" style="width: 5%; font-size: 1.25rem;">
+	<body>
+		<div class="container text-center" >
+			<h1>Password Generator</h1>
+
+			<form action="{% url 'password' %}">
+
+				<h2>Customize Your Password</h2>
+				<div class="line"></div>
+				<br>
+				
+				<p>Password Length</p>
+				<select name="length" class="form_select">
 					<option value="6">6</option>
 					<option value="7">7</option>
 					<option value="8">8</option>
@@ -35,9 +47,9 @@
 					<option value="19">19</option>
 					<option value="20">20</option>
 				</select>
-				<br>
-				How many passwords to generate
-				<select name="passcount" style="width: 5%; font-size: 1.25rem;">
+				
+				<p> How many passwords to generate?</p>
+				<select name="passcount" class="form_select">
 					<option value="1" selected="selected">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -56,15 +68,16 @@
 				</select>
 				<br>
 
-				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="uppercase"> UpperCase
+				<input type="checkbox"  name="uppercase" class="checkbox"> UpperCase
 				<br>
-				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="number"> Numbers
+				<input type="checkbox" name="number" class="checkbox"> Numbers
 				<br>
-				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="special"> Special Characters
+				<input type="checkbox" name="special" class="checkbox"> Special Characters
 				<br><br>
 				<input type="submit" value="Generate Password" class="btn btn-lg btn-primary">
 			</form>
 		</div>
+		
 	</body>
 
 </html>

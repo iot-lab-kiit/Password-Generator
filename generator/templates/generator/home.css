@@ -1,0 +1,62 @@
+body
+{
+    background:white;
+}
+.container
+{
+    padding-top: 2%;
+}
+
+h1
+{
+    color: black;
+    font-family:sans-serif;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+form{
+    
+    font-family:sans-serif;
+    font-weight: normal;
+    font-size:1.3rem ;
+    background: white;
+    height:auto;
+    width: auto;
+    font-size: 1.5 rem;
+    padding:2rem;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+}
+
+form h2
+{
+    color: black;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.line
+{
+    display: block;
+    width:auto;
+    border-bottom: rgba(0,0,0,0.125) solid 3.5px;
+    border-radius: 3px;
+}
+
+
+.form_select
+{
+    width: auto;
+    height: auto;
+    font-size: 1.25rem;
+    border-radius: 4px;
+}
+
+
+.checkbox
+{
+    width:1.2rem;
+    height:1.2rem;
+}
+
+
+
