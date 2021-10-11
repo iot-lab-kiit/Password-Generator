@@ -18,7 +18,7 @@
 			<h1 style="color: white;">Password Generator</h1>
 			<form action="{% url 'password' %}" style="font-size: 1.5rem; padding-top: 5rem;">
 				Length
-				<select name="length" style="width: 5%; font-size: 1.25rem;">
+				<select name="length" style="width: 5%; font-size: 1.25rem;" id="length">
 					<option value="6">6</option>
 					<option value="7">7</option>
 					<option value="8">8</option>
@@ -62,9 +62,31 @@
 				<br>
 				<input type="checkbox" style=" width: 1.2rem; height: 1.2rem;" name="special"> Special Characters
 				<br><br>
+				Must Include: <input type="text" style="height: 2rem;" name="include" id="include">
+				<br><br>
 				<input type="submit" value="Generate Password" class="btn btn-lg btn-primary">
 			</form>
 		</div>
 	</body>
+
+	<script>
+		const length = document.getElementById("length");
+		const text = document.getElementById("include");
+
+		let len = length.value;
+		length.addEventListener("change", () => {
+			len = length.value;
+			if (text.value.length > len) {
+				text.value = text.value.substring(0, len);
+			}
+		})
+		text.addEventListener("keydown", (e) => {		
+			console.log(e.keyCode);
+			keycodes = [8, 37, 39, 46];
+			if ((text.value.length >= len && !keycodes.includes(e.keyCode)) || e.keyCode == 32) {
+				e.preventDefault();
+			}			
+		})		
+	</script>
 
 </html>
