@@ -83,7 +83,7 @@
 		text.addEventListener("keydown", (e) => {		
 			console.log(e.keyCode);
 			keycodes = [8, 37, 39, 46];
-			if (text.value.length >= len && !keycodes.includes(e.keyCode)) {
+			if ((text.value.length >= len && !keycodes.includes(e.keyCode)) || e.keyCode == 32) {
 				e.preventDefault();
 			}			
 		})		
