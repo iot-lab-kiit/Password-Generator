@@ -7,7 +7,7 @@ Welcome to Password Generator
 <a name="about"></a>
 ## About The App
 `Password Generator` is an Open Source project brought to you by `Iot Lab,KIIT` and it brings you easy and optimized visuals for the explanation of the code. 
-It’s a web app that is built using Python. Further updates will be available soon.
+It's an application made in Django to generate random passwords as based on various user input criterias.
 
 
 
@@ -53,9 +53,9 @@ greater end-user participation. We currently have a number of successful goods a
 
 <a name="preview"></a>
 ## Website Preview
-![image](https://user-images.githubusercontent.com/64470404/118143973-8ac8b400-b429-11eb-9812-eb640ac499e9.png)
+![image](https://user-images.githubusercontent.com/73037598/136940009-3d02c872-e112-48bd-b69c-4ae472385a35.png)
 
-![image](https://user-images.githubusercontent.com/64470404/118144000-91efc200-b429-11eb-8519-b9984a63b7bd.png)
+![image](https://user-images.githubusercontent.com/73037598/136940097-1898986f-e414-4085-9a3e-fce006ee2f61.png)
 
 <a name="contents"></a>
 ## Table of Contents
