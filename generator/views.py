@@ -42,4 +42,4 @@ def password(request):
 		else:
 			payload[i] = include
 		
-	return render(request, 'generator/password.html', {'passwords': payload})
+	return render(request, 'generator/password.html', {'passwords': payload, 'userphrase': include})
