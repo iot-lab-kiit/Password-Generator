@@ -1,0 +1,61 @@
+body {
+  background-image: url("Matrix.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.container {
+  background-color: #131417;
+  margin-top: 7%;
+  border-radius: 3rem;
+  width: 40rem;
+  height: 50rem;
+  padding: 0 0 0 0;
+  color: white;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+
+#card-title {
+  background-color: #308d45;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin-top: -3rem;
+  padding: 1.5rem 0rem;
+  color: white;
+}
+
+.container:hover {
+  background: #232323;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+}
+
+#length {
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 0.6rem;
+}
+
+#length:hover {
+  cursor: pointer;
+}
+
+#passcount-select {
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 0.6rem;
+  width: 10rem;
+}
+
+#passcount-select:hover {
+  cursor: pointer;
+}
+
+#requirement {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+#checkbox:hover {
+  cursor: pointer;
+}
+
+#include:hover {
+  border: solid black 0.2rem;
+}
