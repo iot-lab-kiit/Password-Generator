@@ -106,6 +106,8 @@
           name="include"
           id="include"
         />
+        <br class="lengthWarning">
+        <div class="lengthWarning" style="display:none">Included Characters can't be longer than Length!</div>
         <br /><br />
         <input
           type="submit"
@@ -119,24 +121,45 @@
 
   <script>
     const length = document.getElementById("length");
-    const text = document.getElementById("include");
+		const text = document.getElementById("include");
+        const warningElements = document.getElementsByClassName("lengthWarning");
 
-    let len = length.value;
-    length.addEventListener("change", () => {
-      len = length.value;
-      if (text.value.length > len) {
-        text.value = text.value.substring(0, len);
-      }
-    });
-    text.addEventListener("keydown", (e) => {
-      console.log(e.keyCode);
-      keycodes = [8, 37, 39, 46];
-      if (
-        (text.value.length >= len && !keycodes.includes(e.keyCode)) ||
-        e.keyCode == 32
-      ) {
-        e.preventDefault();
-      }
-    });
+		let len = length.value;
+		length.addEventListener("change", () => {
+			len = length.value;
+			if (text.value.length > len) {
+				text.value = text.value.substring(0, len);
+			}
+		})
+    
+		text.addEventListener("keydown", (e) => {		
+			console.log(e.keyCode);
+			keycodes = [8, 37, 39, 46];
+			if ((text.value.length >= len && !keycodes.includes(e.keyCode)) || e.keyCode == 32) {
+				e.preventDefault();
+			}
+            for (var i = 0; i < warningElements.length; i++) {
+                warningElements[i].style.display = "none"
+            }
+		})
+
+    text.addEventListener("paste", (e) => {
+        let clipboardData, pastedDataLength;
+
+        clipboardData = e.clipboardData || window.clipboardData;
+        pastedDataLength = clipboardData.getData('Text').length;
+
+        if(pastedDataLength > len){
+            e.stopPropagation();
+            e.preventDefault();
+            for (var i = 0; i < warningElements.length; i++) {
+                warningElements[i].style.display = "block"
+            }
+        }else{
+            for (var i = 0; i < warningElements.length; i++) {
+                warningElements[i].style.display = "none"
+            }
+        }
+    })
   </script>
 </html>
