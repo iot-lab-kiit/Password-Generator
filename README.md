@@ -72,8 +72,6 @@ greater end-user participation. We currently have a number of successful goods a
 ## Deployed Version
 https://passgeniot.herokuapp.com/
 
-[Back to Start](#title)
-
 <a name="license"></a>
 ## LICENSE
 T𝚑𝚒𝚜 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚒𝚜 𝚞𝚗𝚍𝚎𝚛 [GNU General Public License v3.0 License]
