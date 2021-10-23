@@ -30,7 +30,7 @@ git clone https://github.com/iot-lab-kiit/Password-Generator.git
 
 3.Decide the best suiting sub-category for your component under basic or advanced
 
-4.Go to < > file and add the name and the corresponding icon.
+4.Go to the respective file and add the name and the corresponding icon.
 
 5.Create the fragment with a demo of the component and the related codes as done in other fragments.
 
